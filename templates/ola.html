@@ -6,7 +6,10 @@
     <title>Aula</title>
 </head>
 <body>
-    <h1>Titulo1</h1>
-    <img src="static/teste.jpg" height="400" width="300" alt="Uma pessoa de braços abertos">
+    {%for item in post%}
+    <h1>{{item.titulo}}</h1>
+    <h1>{{item.texto}}</h1>
+    <h1>{{item.data_criacao}}</h1>
+    {%endfor%}
 </body>
 </html>
